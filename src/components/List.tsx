@@ -10,6 +10,7 @@ interface Props {
 }
 
 const List = ({subs}:Props) => {
+  
   const renderList = (): JSX.Element[] => {
     return subs?.map(sub => (
       <li key={sub.nick}>

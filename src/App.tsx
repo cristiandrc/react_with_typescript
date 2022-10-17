@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
+import Form from './components/Form';
 import List from './components/List';
 
 const INITIAL_STATE = [
@@ -38,6 +39,7 @@ function App() {
     <div className="App">
       <h1>Midu subs</h1>
       { subs && <List subs={subs} />}
+      <Form />
     </div>
   );
 }
